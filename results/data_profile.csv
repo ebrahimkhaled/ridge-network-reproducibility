@@ -1,0 +1,10 @@
+"quantity","value"
+"trading days (returns)",1257
+"stocks",452
+"sectors",10
+"cells flagged as corporate actions",253
+"share of cells flagged",0.000445293964418724
+"stocks with a flagged cell",187
+"median excess kurtosis before cleaning",11.5471023552273
+"median excess kurtosis after cleaning",4.70396932578348
+"share of variance, first principal component",0.274619944626384

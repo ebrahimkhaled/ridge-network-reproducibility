@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this archive, please cite it as below."
+title: "Reproducibility archive: What does a ridge network estimate? Effective penalty, leakage and support recovery for ridge precision matrix estimators"
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: Arashi
+    given-names: Mohammad
+    orcid: "https://orcid.org/0000-0002-5881-9241"
+    affiliation: "Ferdowsi University of Mashhad"
+  - family-names: Ebrahim
+    given-names: Ebrahim Khaled
+    orcid: "https://orcid.org/0009-0006-7839-8778"
+    affiliation: "Alexandria University"

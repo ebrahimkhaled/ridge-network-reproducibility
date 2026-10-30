@@ -1,0 +1,17 @@
+"graph","n","share_not_pd","share_nonpos_diag"
+"band",50,0,0
+"band",100,0,0
+"band",200,0,0
+"band",400,0,0
+"random",50,0,0
+"random",100,0,0
+"random",200,0,0
+"random",400,0,0
+"hub",50,0,0
+"hub",100,0,0
+"hub",200,0,0
+"hub",400,0,0
+"scale-free",50,0,0
+"scale-free",100,0,0
+"scale-free",200,0,0
+"scale-free",400,0,0

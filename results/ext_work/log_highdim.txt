@@ -1,0 +1,12 @@
+﻿Rscript.exe : Warning messages:
+At line:1 char:579
++ ... CORES="18"; & "C:\Program Files\R\R-4.4.1\bin\Rscript.exe" sim_extens ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Warning messages::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 

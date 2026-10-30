@@ -1,0 +1,8 @@
+export(ridge_precision)
+export(ridge_pcor)
+export(effective_penalty)
+export(effective_penalty_floor)
+export(penalty_for_kappa)
+export(extrapolated_ridge)
+export(mps_select)
+importFrom(stats, uniroot)

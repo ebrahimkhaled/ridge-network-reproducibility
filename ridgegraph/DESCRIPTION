@@ -1,0 +1,24 @@
+Package: ridgegraph
+Type: Package
+Title: Effective Penalty, Leakage and Edge Selection for Ridge
+        Precision Matrices
+Version: 0.1.1
+Authors@R: person("Mohammad", "Arashi", email = "arashi@um.ac.ir",
+    role = c("aut", "cre"))
+Description: Tools for extracting networks from the ridge estimator of a
+    precision matrix, (S + lambda I)^{-1}. The package computes ridge partial
+    correlations, the estimated effective penalty of the ridge estimator and
+    its lower limit, a two-point extrapolation across penalties that removes
+    the part of the ridge bias that is linear in the penalty, and a
+    multi-penalty permutation threshold that controls the probability of any
+    false edge under complete independence.
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: stats
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Author: Mohammad Arashi [aut, cre]
+Maintainer: Mohammad Arashi <arashi@um.ac.ir>

@@ -1,0 +1,389 @@
+"claim","sentence","setting","quantity","estimate","se","z"
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","band_50","MB - best other ( vWP_lFDR )",0.102976140825519,0.00651848883920459,15.7975480768154
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","band_50","vWP_lFDR - RT_lFDR",0.0510829572087185,0.00480626357312227,10.6284136172611
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","band_50","RE_lFDR - RT_lFDR",-0.024186572702296,0.00360886622483641,-6.7019864953272
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","band_50","vWP_lFDR - RT_lFDR",0.0510829572087185,0.00480626357312227,10.6284136172611
+"S5.4-e","Second-best ridge layer minus third","band_50","RT_lFDR - RE_lFDR",0.024186572702296,0.00360886622483641,6.7019864953272
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_50","vWP_lFDR FDP",0.0452123538891596,0.00337794302761255,13.384581539587
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_50","RT_lFDR FDP",0.041898529453625,0.003470107675079,12.0741295016648
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_50","RE_lFDR FDP",0.0449616262357742,0.00373828458682197,12.027341736975
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","band_50","FWER RT_MPS",0.04,0.0195959179422654,2.04124145231932
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","band_50","RT best MCC - MB",-0.0932168741212904,0.00281801138092168,-33.0789558737702
+"S5.5-a2","Same with the best ridge ranking (vWP)","band_50","vWP best MCC - MB",-0.0645374450047368,0.00266179069595471,-24.2458751932743
+"S5.5-b","Exact separation share (RT)","band_50","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","band_50","RT AUC",0.9758830731558,0.000814299454959477,1198.4326738919
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","band_50","sens mcc(m=10) - mcc(m=0.3)",0.0773942708820446,0.00345193384419884,22.4205544993598
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","band_50","argmax at kappa = 4.53",0.752130924032047,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","band_50","obs - pred at distance 1",-0.00016495067837501,0.000664931939187085,-0.248071522292449
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","band_50","pred at distance 2",0.0504028087666581,1.97189819794354e-05,2556.05531863776
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","band_50","obs at distance 3 and 4+ (mean of the two classes)",0.0377456734368613,0.000141108617583101,267.493751149765
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","band_50","obs(d=2) - obs(d=4+)",0.0203538965047465,0.000414877836883711,49.0599754800874
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_50","rich - obs at distance 2",0.00726109283479718,6.85871226819746e-05,105.866707201955
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_50","rich - obs at distance 4",0.0065055310620869,1.49263163841609e-05,435.843036865429
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","band_50","kappa_hat / lambda_CV",2.73482881827278,0.00404530658975193,676.049826532553
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","band_50","max dev.",0.178193755884423,0.00133960306610166,133.019817880068
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","band_100","MB - best other ( RS_lasso )",0.0776317599282182,0.00273981392253772,28.3346833482446
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","band_100","vWP_lFDR - RT_lFDR",0.0258627396984789,0.00899354778818957,2.87569936887889
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","band_100","RE_lFDR - RT_lFDR",-0.0141884270925546,0.0066781373599429,-2.12460845409683
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","band_100","RS_lasso - vWP_lFDR",0.0436078677324796,0.00835910879402098,5.21680825157713
+"S5.4-e","Second-best ridge layer minus third","band_100","vWP_lFDR - RT_lFDR",0.0258627396984789,0.00899354778818957,2.87569936887889
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_100","vWP_lFDR FDP",0.0102250492911058,0.00135723233697832,7.53375012701978
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_100","RT_lFDR FDP",0.00894949822603228,0.00114856433403816,7.79189981859118
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_100","RE_lFDR FDP",0.00913186195243272,0.00125014250243633,7.30465681683178
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","band_100","FWER RT_MPS",0.32,0.0466476151587624,6.85994340570035
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","band_100","RT best MCC - MB",-0.0388077836402534,0.0016820307438019,-23.0719823542202
+"S5.5-a2","Same with the best ridge ranking (vWP)","band_100","vWP best MCC - MB",-0.0236716111840227,0.00143274412520572,-16.5218693049074
+"S5.5-b","Exact separation share (RT)","band_100","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","band_100","RT AUC",0.998573385889403,0.000110947768176323,9000.39182674164
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","band_100","sens mcc(m=10) - mcc(m=0.3)",0.00695964470460081,0.00216917294371298,3.20843237731334
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","band_100","argmax at kappa = 1.53",0.944648940792682,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","band_100","obs - pred at distance 1",-0.000168621586726084,0.000548190477622085,-0.307596708825594
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","band_100","pred at distance 2",0.054838209506537,3.71778975612041e-07,147502.180337819
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","band_100","obs at distance 3 and 4+ (mean of the two classes)",0.0373067183668561,0.000145073434946356,257.157476009658
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","band_100","obs(d=2) - obs(d=4+)",0.0240426202554123,0.000382837579486699,62.8010977596511
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_100","rich - obs at distance 2",0.0049366298013575,7.18486346057842e-05,68.7087490032841
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_100","rich - obs at distance 4",0.00639138927129097,8.92911601362842e-06,715.79193971003
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","band_100","kappa_hat / lambda_CV",1.82829396764786,0.000900120815330109,2031.16507974249
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","band_100","max dev.",0.172971778940384,0.00141889441633282,121.906025528971
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","band_200","MB - best other ( RS_lasso )",0.00336927990857234,0.000707363197460554,4.76315409208185
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","band_200","vWP_lFDR - RT_lFDR",0.0420162439489591,0.0123201148288767,3.41037762492918
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","band_200","RE_lFDR - RT_lFDR",0.000249584024976877,0.006615222991082,0.0377287395018039
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","band_200","RS_lasso - RT_MPS",0.0211386298484188,0.00159827782905009,13.2258794210906
+"S5.4-e","Second-best ridge layer minus third","band_200","RT_MPS - vWP_lFDR",0.0722985723665976,0.0108041682119616,6.69172961288718
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_200","vWP_lFDR FDP",0.00140622370884259,0.000402899447937957,3.4902597063353
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_200","RT_lFDR FDP",0.000910204719188519,0.00035417175344088,2.56995288400506
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_200","RE_lFDR FDP",0.000712266787377244,0.000360451088760813,1.97604282407893
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","band_200","FWER RT_MPS",0.97,0.017058722109232,56.8624070307732
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","band_200","RT best MCC - MB",-0.00159060114205708,0.000451173516674864,-3.52547541748408
+"S5.5-a2","Same with the best ridge ranking (vWP)","band_200","vWP best MCC - MB",-0.00127830973579378,0.000372302785684897,-3.4335218132794
+"S5.5-b","Exact separation share (RT)","band_200","Sep.",0.59,0.0491833305094318,11.9959342705931
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","band_200","RT AUC",0.999994107223544,2.01709504078682e-06,495759.538843282
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","band_200","sens mcc(m=10) - mcc(m=0.3)",-0.0199933808196641,0.00117749241663629,-16.9796259722663
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","band_200","argmax at kappa = 1.24",0.996826801027517,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","band_200","obs - pred at distance 1",-0.00102017271434919,0.000369051564819431,-2.76430941255686
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","band_200","pred at distance 2",0.0509824565815927,9.32129561205892e-05,546.946033077601
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","band_200","obs at distance 3 and 4+ (mean of the two classes)",0.0324246242004182,0.000179395850434163,180.743445971276
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","band_200","obs(d=2) - obs(d=4+)",0.0236454793976976,0.000354872264704361,66.63095921964
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_200","rich - obs at distance 2",0.00125286036395821,7.22874956003157e-05,17.3316332728609
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_200","rich - obs at distance 4",0.00530805175137236,1.93922204410149e-05,273.720679254745
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","band_200","kappa_hat / lambda_CV",1.4013005147612,0.00133297956023266,1051.25431519491
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","band_200","max dev.",0.153238781605668,0.00124922404538669,122.667172611326
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","band_400","MB - best other ( RS_lasso )",0.000875242056073321,0.000540425255287408,1.61954321621748
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","band_400","vWP_lFDR - RT_lFDR",0.041028244244717,0.0119090523117719,3.44513091139597
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","band_400","RE_lFDR - RT_lFDR",0.00738806751176536,0.00846647918875319,0.872625721631682
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","band_400","RS_lasso - vWP_lFDR",0.0962277562500137,0.0109940961051437,8.75267555692843
+"S5.4-e","Second-best ridge layer minus third","band_400","vWP_lFDR - RE_lFDR",0.0336401767329517,0.0133626301019135,2.5174816990657
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_400","vWP_lFDR FDP",0.000694059405940594,0.000352220003187695,1.97052807807379
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_400","RT_lFDR FDP",0,0,NA
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","band_400","RE_lFDR FDP",0,0,NA
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","band_400","FWER RT_MPS",1,0,NA
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","band_400","RT best MCC - MB",5.11512305827733e-05,5.11512305827733e-05,1
+"S5.5-a2","Same with the best ridge ranking (vWP)","band_400","vWP best MCC - MB",5.11512305827733e-05,5.11512305827733e-05,1
+"S5.5-b","Exact separation share (RT)","band_400","Sep.",1,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","band_400","RT AUC",1,0,NA
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","band_400","sens mcc(m=10) - mcc(m=0.3)",-0.00168777873072623,0.000290232257081858,-5.81526928707377
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","band_400","argmax at kappa = 0.36",1,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","band_400","obs - pred at distance 1",-0.000175977884453348,0.000258396797114947,-0.681037406106335
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","band_400","pred at distance 2",0.0401747330853963,9.73232934106178e-07,41279.6686974973
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","band_400","obs at distance 3 and 4+ (mean of the two classes)",0.0279417158994383,9.55105491327681e-05,292.551096744264
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","band_400","obs(d=2) - obs(d=4+)",0.0164954370546708,0.000294728482167949,55.9682489229901
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_400","rich - obs at distance 2",-0.00202372061589975,9.39370699306736e-05,-21.5433653337631
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","band_400","rich - obs at distance 4",0.00423051454921129,8.24733922921975e-06,512.955079405836
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","band_400","kappa_hat / lambda_CV",1.21438976859577,6.01414176158427e-05,20192.2371759304
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","band_400","max dev.",0.133109398824287,0.000964366632512143,138.027793928894
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","random_50","MB - best other ( GLASSO )",0.133601604210837,0.00910144643497536,14.6791617316373
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","random_50","vWP_lFDR - RT_lFDR",0.0257381842619634,0.00501270943051379,5.13458532132099
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","random_50","RE_lFDR - RT_lFDR",-0.00313188689579513,0.00360681368999338,-0.868325110466373
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","random_50","RS_lasso - vWP_lFDR",0.0112042074912077,0.00808107295497669,1.38647523090454
+"S5.4-e","Second-best ridge layer minus third","random_50","vWP_lFDR - RT_lFDR",0.0257381842619634,0.00501270943051379,5.13458532132099
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_50","vWP_lFDR FDP",0.171314935064935,0.0289229806410857,5.92314247244554
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_50","RT_lFDR FDP",0.129173992673993,0.027228000858046,4.74416000452789
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_50","RE_lFDR FDP",0.134738095238095,0.0267731565881719,5.03258160069259
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","random_50","FWER RT_MPS",0.05,0.0217944947177034,2.29415733870562
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","random_50","RT best MCC - GLASSO",-0.111771237989672,0.00249794144910382,-44.7453394192935
+"S5.5-a2","Same with the best ridge ranking (vWP)","random_50","vWP best MCC - GLASSO",-0.0849137892305312,0.00235046764399262,-36.1263382831735
+"S5.5-b","Exact separation share (RT)","random_50","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","random_50","RT AUC",0.817724877195706,0.00202372690543544,404.068787640968
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","random_50","sens mcc(m=10) - mcc(m=0.3)",0.143723605720202,0.0025005571169127,57.4766338061695
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","random_50","argmax at kappa = 11.81",0.375588670566889,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","random_50","obs - pred at distance 1",0.000568816954723666,0.000405887908627356,1.40141389441067
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","random_50","pred at distance 2",0.0183646704111508,3.97920899876493e-05,461.515603147531
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","random_50","obs at distance 3 and 4+ (mean of the two classes)",0.0371066549357438,0.000175761980945703,211.118779704736
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","random_50","obs(d=2) - obs(d=4+)",0.00038551590625305,0.000159471736537931,2.41745599955485
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_50","rich - obs at distance 2",0.00655148770414273,4.46512653894092e-05,146.725689563474
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_50","rich - obs at distance 4",0.00724467997363045,3.53251536449785e-05,205.085589901186
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","random_50","kappa_hat / lambda_CV",2.68840264087854,0.0157950220520652,170.205690882656
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","random_50","max dev.",0.190323394633595,0.00189852088307728,100.248249218678
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","random_100","MB - best other ( vWP_lFDR )",0.243386513819981,0.0087413532469679,27.8431161564606
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","random_100","vWP_lFDR - RT_lFDR",0.0684639566554219,0.00731049711362293,9.36515747032318
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","random_100","RE_lFDR - RT_lFDR",-0.0300480272434623,0.00566882604227203,-5.30057317324545
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","random_100","vWP_lFDR - RT_lFDR",0.0684639566554219,0.00731049711362293,9.36515747032318
+"S5.4-e","Second-best ridge layer minus third","random_100","RT_lFDR - RE_lFDR",0.0300480272434623,0.00566882604227203,5.30057317324545
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_100","vWP_lFDR FDP",0.0675692982145511,0.00771969508133364,8.75284548193294
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_100","RT_lFDR FDP",0.0714764320972173,0.00997725901696008,7.16393470147626
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_100","RE_lFDR FDP",0.0770520851551643,0.0106795880497241,7.21489300864513
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","random_100","FWER RT_MPS",0.06,0.0237486841740758,2.52645576319956
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","random_100","RT best MCC - MB",-0.136976739298008,0.00273933598869274,-50.0036285667082
+"S5.5-a2","Same with the best ridge ranking (vWP)","random_100","vWP best MCC - MB",-0.0897765875362687,0.00243071000714302,-36.9343061378964
+"S5.5-b","Exact separation share (RT)","random_100","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","random_100","RT AUC",0.932848980419428,0.00119547351026061,780.317566564955
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","random_100","sens mcc(m=10) - mcc(m=0.3)",0.195712623269818,0.00286591416847822,68.289771348505
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","random_100","argmax at kappa = 10.9",0.631831963439297,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","random_100","obs - pred at distance 1",0.000585313641732587,0.000396195284287047,1.47733621510882
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","random_100","pred at distance 2",0.0203568789356848,7.67149121709121e-07,26535.752123827
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","random_100","obs at distance 3 and 4+ (mean of the two classes)",0.0359399601363783,4.88651694710464e-05,735.492387019624
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","random_100","obs(d=2) - obs(d=4+)",0.000805194140070172,0.000161708628398892,4.97928989963338
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_100","rich - obs at distance 2",0.0059449300789089,3.18586974158826e-05,186.60304912357
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_100","rich - obs at distance 4",0.00691206879077519,1.08708448979487e-05,635.835471452591
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","random_100","kappa_hat / lambda_CV",1.76607721448326,0.000902456352115508,1956.96690520631
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","random_100","max dev.",0.180218636353084,0.0015169934934726,118.799874309639
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","random_200","MB - best other ( vWP_lFDR )",0.161371740682192,0.00539715064075957,29.8994323900288
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","random_200","vWP_lFDR - RT_lFDR",0.0569795019669347,0.00618954651894386,9.20576358745217
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","random_200","RE_lFDR - RT_lFDR",-0.0363157834650299,0.00449439225510342,-8.08024342419001
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","random_200","vWP_lFDR - RT_lFDR",0.0569795019669347,0.00618954651894386,9.20576358745217
+"S5.4-e","Second-best ridge layer minus third","random_200","RT_lFDR - RE_lFDR",0.0363157834650299,0.00449439225510342,8.08024342419001
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_200","vWP_lFDR FDP",0.0283129141296472,0.00236200885944532,11.9867942139286
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_200","RT_lFDR FDP",0.0249612579462857,0.0022854569870291,10.9217797963169
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_200","RE_lFDR FDP",0.027755157917036,0.00228899438121876,12.1254810168026
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","random_200","FWER RT_MPS",0.27,0.0443959457608462,6.08163640559537
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","random_200","RT best MCC - MB",-0.0766975413385655,0.00232611430905832,-32.9723870576313
+"S5.5-a2","Same with the best ridge ranking (vWP)","random_200","vWP best MCC - MB",-0.0473738269798059,0.00196036691585283,-24.1657960031409
+"S5.5-b","Exact separation share (RT)","random_200","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","random_200","RT AUC",0.987709305880508,0.000440719846893464,2241.12735753257
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","random_200","sens mcc(m=10) - mcc(m=0.3)",0.0823721199528513,0.00288676975932589,28.5343573683848
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","random_200","argmax at kappa = 3.37",0.856958615251275,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","random_200","obs - pred at distance 1",-0.000353650404919031,0.00031865411790012,-1.10982530917702
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","random_200","pred at distance 2",0.0197889333133045,3.75485061765382e-05,527.023184897551
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","random_200","obs at distance 3 and 4+ (mean of the two classes)",0.0330014293008078,0.000185348802704131,178.050404531004
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","random_200","obs(d=2) - obs(d=4+)",0.00170136546442832,0.000177863973132505,9.56554289474259
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_200","rich - obs at distance 2",0.00481230740997247,3.6778957143586e-05,130.844041911931
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_200","rich - obs at distance 4",0.00597766479199822,3.37621186757867e-05,177.052419292787
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","random_200","kappa_hat / lambda_CV",1.39799925011632,0.00234020085865114,597.384299278528
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","random_200","max dev.",0.161942053211417,0.00162733214037132,99.5138295335735
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","random_400","MB - best other ( RS_lasso )",0.0328765603422784,0.00181775712135331,18.0863328527642
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","random_400","vWP_lFDR - RT_lFDR",0.0152228759887289,0.0136618393459932,1.1142625530283
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","random_400","RE_lFDR - RT_lFDR",-0.0120132738100541,0.00780408829789433,-1.53935646951809
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","random_400","RS_lasso - RT_MPS",0.0444271265227076,0.00272338392544987,16.3132072960917
+"S5.4-e","Second-best ridge layer minus third","random_400","RT_MPS - vWP_lFDR",0.0779242650113209,0.0127773674360405,6.09861658916718
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_400","vWP_lFDR FDP",0.00312778780572871,0.000720552917247642,4.34081624105581
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_400","RT_lFDR FDP",0.00286668309390731,0.000662722832933147,4.32561389385009
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","random_400","RE_lFDR FDP",0.00293347579612806,0.000636459593751353,4.60905267974339
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","random_400","FWER RT_MPS",0.92,0.0271293199325011,33.9116499156263
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","random_400","RT best MCC - MB",-0.00940777758641852,0.00104287189754081,-9.02102895725061
+"S5.5-a2","Same with the best ridge ranking (vWP)","random_400","vWP best MCC - MB",-0.00341928114637148,0.000906052263052454,-3.77382330556966
+"S5.5-b","Exact separation share (RT)","random_400","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","random_400","RT AUC",0.999537422638443,4.32058799772782e-05,23134.2915168976
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","random_400","sens mcc(m=10) - mcc(m=0.3)",-0.0238685190485515,0.00131185805401917,-18.1944372528911
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","random_400","argmax at kappa = 1.12",0.975102706442603,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","random_400","obs - pred at distance 1",-0.000534633562439089,0.000267366293916013,-1.99962962648923
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","random_400","pred at distance 2",0.0168918889548708,3.08429904439715e-07,54767.3513875257
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","random_400","obs at distance 3 and 4+ (mean of the two classes)",0.0281398407065225,3.99429107595787e-05,704.501504056618
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","random_400","obs(d=2) - obs(d=4+)",0.00148404053655616,0.000121935426251098,12.1707085642209
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_400","rich - obs at distance 2",0.00317093518171138,2.46975156268803e-05,128.390856376671
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","random_400","rich - obs at distance 4",0.00450444394080834,7.08950166718899e-06,635.368203897237
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","random_400","kappa_hat / lambda_CV",1.21073824630872,5.74153866114929e-05,21087.3481441709
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","random_400","max dev.",0.137925666447658,0.000966191364029742,142.751913940117
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","hub_50","MB - best other ( GLASSO )",0.196318018870031,0.0127374584864153,15.4126523026087
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","hub_50","vWP_lFDR - RT_lFDR",0.000950466736583786,0.00185604568652323,0.512092317277068
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","hub_50","RE_lFDR - RT_lFDR",-0.00107584070575802,0.00101694324804869,-1.05791616968041
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","hub_50","RS_lasso - RT_MPS",0.0740485339301745,0.00840918575122952,8.8056722875158
+"S5.4-e","Second-best ridge layer minus third","hub_50","RT_MPS - vWP_lFDR",0.0122682171916463,0.00355191977092974,3.45396798994562
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_50","vWP_lFDR FDP",0.0666666666666667,0.0246182981958665,2.70801280154532
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_50","RT_lFDR FDP",0.05,0.021904291355759,2.28265773075805
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_50","RE_lFDR FDP",0.08,0.0272659924344291,2.93405788153095
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","hub_50","FWER RT_MPS",0.05,0.0217944947177034,2.29415733870562
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","hub_50","RT best MCC - GLASSO",-0.30061588309193,0.00381245777916394,-78.850940916611
+"S5.5-a2","Same with the best ridge ranking (vWP)","hub_50","vWP best MCC - GLASSO",-0.269952393858839,0.00354651316594263,-76.1176911596456
+"S5.5-b","Exact separation share (RT)","hub_50","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","hub_50","RT AUC",0.784400997344029,0.00265270443927741,295.698603180119
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","hub_50","sens mcc(m=10) - mcc(m=0.3)",0.239019042856257,0.00461438576904737,51.7986693829463
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","hub_50","argmax at kappa = 11.8",0.356263933440363,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","hub_50","obs - pred at distance 1",-7.72578757030878e-06,0.000372601309652535,-0.020734730045671
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","hub_50","pred at distance 2",0.0203539503999907,3.4634517273945e-05,587.678189333468
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","hub_50","obs at distance 3 and 4+ (mean of the two classes)",0.0380891364812081,0.000171162355721229,222.5322052896
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","hub_50","obs(d=2) - obs(d=4+)",0.00452800506693502,0.000114082129643318,39.6907480697635
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_50","rich - obs at distance 2",0.00757077882544661,3.82781795266212e-05,197.7831474504
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_50","rich - obs at distance 4",0.00727866527611011,3.68483972130405e-05,197.530037304695
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","hub_50","kappa_hat / lambda_CV",2.71624242472363,0.0153297659705703,177.187468480485
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","hub_50","max dev.",0.19188401010731,0.00177997783700859,107.801347925651
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","hub_100","MB - best other ( GLASSO )",0.474121984037212,0.0137369176928964,34.5144372731001
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","hub_100","vWP_lFDR - RT_lFDR",0.00281060733793048,0.00257524165273882,1.09139557250534
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","hub_100","RE_lFDR - RT_lFDR",-0.00164162609192775,0.00123266154483091,-1.3317735909032
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","hub_100","RT_MPS - RS_lasso",0.0343206430637408,0.0121987976479748,2.81344473891151
+"S5.4-e","Second-best ridge layer minus third","hub_100","RS_lasso - vWP_lFDR",0.0875933724178651,0.0114010224567015,7.68294008283248
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_100","vWP_lFDR FDP",0.0860714285714286,0.0271664617875122,3.16829733826411
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_100","RT_lFDR FDP",0.0575,0.0229885237068895,2.50124804590073
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_100","RE_lFDR FDP",0.02,0.014070529413629,1.42141062443803
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","hub_100","FWER RT_MPS",0.1,0.03,3.33333333333333
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","hub_100","RT best MCC - MB",-0.493599017221719,0.00338088431335342,-145.99701482602
+"S5.5-a2","Same with the best ridge ranking (vWP)","hub_100","vWP best MCC - MB",-0.436635583825223,0.00328174450850073,-133.049840624156
+"S5.5-b","Exact separation share (RT)","hub_100","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","hub_100","RT AUC",0.887924917339693,0.00134800079239226,658.69762269495
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","hub_100","sens mcc(m=10) - mcc(m=0.3)",0.429119509865727,0.00416955592834871,102.917317153166
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","hub_100","argmax at kappa = 10.91",0.621452051852216,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","hub_100","obs - pred at distance 1",0.000140550662583915,0.00026812884963655,0.524190749240273
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","hub_100","pred at distance 2",0.0220539023093,7.91148806555873e-07,27875.7954591473
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","hub_100","obs at distance 3 and 4+ (mean of the two classes)",0.0368454462301408,3.99608923332145e-05,922.037624257849
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","hub_100","obs(d=2) - obs(d=4+)",0.00522789308624422,0.000111994487503075,46.6799143672201
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_100","rich - obs at distance 2",0.00698673050108709,2.30447758060762e-05,303.18066705795
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_100","rich - obs at distance 4",0.00696820296035161,9.64825645927372e-06,722.224060872045
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","hub_100","kappa_hat / lambda_CV",1.76209952609871,0.000920777245018084,1913.70881028245
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","hub_100","max dev.",0.18118761883795,0.0014871905727144,121.832145901281
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","hub_200","MB - best other ( GLASSO )",0.0863903330537931,0.00403274487081989,21.4222163367922
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","hub_200","vWP_lFDR - RT_lFDR",0.0345231265440981,0.0102746719583064,3.36002226486543
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","hub_200","RE_lFDR - RT_lFDR",-0.0600287719863001,0.00893802997992362,-6.71610770171225
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","hub_200","RS_lasso - RT_MPS",0.218559273136664,0.00951096693341861,22.9797111762331
+"S5.4-e","Second-best ridge layer minus third","hub_200","RT_MPS - vWP_lFDR",0.414618343937349,0.0136135088713339,30.4563906231711
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_200","vWP_lFDR FDP",0.18320978708827,0.0221398230718539,8.27512426335433
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_200","RT_lFDR FDP",0.152348013098013,0.024899942781169,6.11840816008736
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_200","RE_lFDR FDP",0.135718253968254,0.0281155173199044,4.8271654554324
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","hub_200","FWER RT_MPS",0.36,0.048,7.5
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","hub_200","RT best MCC - MB",-0.448889792919127,0.00306006670571112,-146.692812964289
+"S5.5-a2","Same with the best ridge ranking (vWP)","hub_200","vWP best MCC - MB",-0.400208124425962,0.00326912137082624,-122.420699334516
+"S5.5-b","Exact separation share (RT)","hub_200","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","hub_200","RT AUC",0.964475364518402,0.000691291780290985,1395.17840659472
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","hub_200","sens mcc(m=10) - mcc(m=0.3)",0.411271365412375,0.00338686983907742,121.431110421534
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","hub_200","argmax at kappa = 10.45",0.851745483014339,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","hub_200","obs - pred at distance 1",0.000278376260337051,0.000229181751892509,1.21465281610909
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","hub_200","pred at distance 2",0.0219346961662753,1.47903238724991e-05,1483.04366796595
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","hub_200","obs at distance 3 and 4+ (mean of the two classes)",0.0329226433470033,0.000107639734943441,305.859572808334
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","hub_200","obs(d=2) - obs(d=4+)",0.00540978662351614,9.6013236233841e-05,56.3441754045302
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_200","rich - obs at distance 2",0.00548447152421632,2.68448746539492e-05,204.302370374804
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_200","rich - obs at distance 4",0.00590954380561122,1.91075538752035e-05,309.277882674466
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","hub_200","kappa_hat / lambda_CV",1.38492969328286,0.00128430935416963,1078.34587421368
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","hub_200","max dev.",0.16134757113358,0.00133755525602539,120.628714519826
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","hub_400","MB - best other ( RS_lasso )",-0.0326356663147095,0.00152385490448857,-21.4165182121867
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","hub_400","vWP_lFDR - RT_lFDR",0.0326806791892938,0.00513469482225582,6.36467800338254
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","hub_400","RE_lFDR - RT_lFDR",-0.0741568477975393,0.00517760930485485,-14.3226040110839
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","hub_400","RS_lasso - RT_MPS",0.0315031951567307,0.00163609190154832,19.2551501091825
+"S5.4-e","Second-best ridge layer minus third","hub_400","RT_MPS - vWP_lFDR",0.255591006224935,0.00452933545694477,56.4301338804659
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_400","vWP_lFDR FDP",0.0781824940932596,0.00375501711065936,20.8208090107827
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_400","RT_lFDR FDP",0.0517566091819936,0.00343756319995056,15.0561913109664
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","hub_400","RE_lFDR FDP",0.0560894507598855,0.00382319474532553,14.6708327710651
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","hub_400","FWER RT_MPS",0.92,0.0271293199325011,33.9116499156263
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","hub_400","RT best MCC - MB",-0.190361392072954,0.00267896252359924,-71.0578779643398
+"S5.5-a2","Same with the best ridge ranking (vWP)","hub_400","vWP best MCC - MB",-0.176338368731843,0.00267111901660571,-66.0166647893971
+"S5.5-b","Exact separation share (RT)","hub_400","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","hub_400","RT AUC",0.994929806493577,0.000169400768027233,5873.23078921124
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","hub_400","sens mcc(m=10) - mcc(m=0.3)",0.161760277997325,0.00272858175101982,59.2836472415995
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","hub_400","argmax at kappa = 10.2",0.968577485086042,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","hub_400","obs - pred at distance 1",2.52570354442061e-05,0.000178709471707174,0.141330144412218
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","hub_400","pred at distance 2",0.0195007112931198,2.48264837367513e-07,78548.0195258276
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","hub_400","obs at distance 3 and 4+ (mean of the two classes)",0.0289224150096675,3.34423781536456e-05,864.843249986233
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","hub_400","obs(d=2) - obs(d=4+)",0.0045960770869805,8.17807564983929e-05,56.1999825358772
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_400","rich - obs at distance 2",0.00360780148244251,1.72318433748725e-05,209.368284283701
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","hub_400","rich - obs at distance 4",0.0045608789576218,7.2346536319628e-06,630.421190790914
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","hub_400","kappa_hat / lambda_CV",1.21106604248398,5.46726734017851e-05,22151.2131587923
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","hub_400","max dev.",0.142404291718008,0.00117924343046042,120.75902908563
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","scale-free_50","MB - best other ( GLASSO )",0.0593231048947789,0.00869597731815472,6.82190198115274
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","scale-free_50","vWP_lFDR - RT_lFDR",0.00628381550167218,0.00289664752645082,2.16934074453013
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","scale-free_50","RE_lFDR - RT_lFDR",-0.00238932930957242,0.00229347537966387,-1.04179418308061
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","scale-free_50","RS_lasso - vWP_lFDR",0.0251033754883425,0.00634422952001865,3.95688324470781
+"S5.4-e","Second-best ridge layer minus third","scale-free_50","vWP_lFDR - RT_MPS",0.00140339616516432,0.00473206360459466,0.296571703685824
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_50","vWP_lFDR FDP",0.0763809523809524,0.023968771914169,3.18668610367143
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_50","RT_lFDR FDP",0.07,0.0235916437868508,2.96715229478904
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_50","RE_lFDR FDP",0.0875,0.0262021569780625,3.33941973072135
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","scale-free_50","FWER RT_MPS",0.02,0.014,1.42857142857143
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","scale-free_50","RT best MCC - GLASSO",-0.109103584368163,0.00333077237650255,-32.75624150658
+"S5.5-a2","Same with the best ridge ranking (vWP)","scale-free_50","vWP best MCC - GLASSO",-0.0910303093199503,0.00326659927072731,-27.8669961558163
+"S5.5-b","Exact separation share (RT)","scale-free_50","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","scale-free_50","RT AUC",0.752552238526265,0.00274386997574324,274.26672735191
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","scale-free_50","sens mcc(m=10) - mcc(m=0.3)",0.126388389194156,0.00377648639870185,33.467190359166
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","scale-free_50","argmax at kappa = 11.86",0.268129391285439,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","scale-free_50","obs - pred at distance 1",0.0021192679271167,0.000442958356490826,4.78435025790192
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","scale-free_50","pred at distance 2",0.0151162476292247,1.51364603277708e-05,998.664635052823
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","scale-free_50","obs at distance 3 and 4+ (mean of the two classes)",0.0369927251631176,8.526309318243e-05,433.865624414628
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","scale-free_50","obs(d=2) - obs(d=4+)",8.01302475140306e-06,0.000153110692582563,0.0523348475292289
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_50","rich - obs at distance 2",0.00665853691715082,3.5336334742084e-05,188.433151478521
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_50","rich - obs at distance 4",0.00718656724952868,1.98287327224732e-05,362.431999569174
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","scale-free_50","kappa_hat / lambda_CV",2.58472624399655,0.00706143734452054,366.034012325014
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","scale-free_50","max dev.",0.184859902326753,0.00157333918095161,117.495263935995
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","scale-free_100","MB - best other ( GLASSO )",0.156420876987825,0.00993320872834431,15.7472656888282
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","scale-free_100","vWP_lFDR - RT_lFDR",0.0306761927025721,0.00653956153473297,4.69086383538782
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","scale-free_100","RE_lFDR - RT_lFDR",-0.00490607456272216,0.00462802386370944,-1.06007978938766
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","scale-free_100","vWP_lFDR - RT_MPS",0.000422869027366475,0.00890140181854001,0.0475058913176703
+"S5.4-e","Second-best ridge layer minus third","scale-free_100","RT_MPS - RS_lasso",0.0205880222880068,0.00742822440343036,2.77159401357062
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_100","vWP_lFDR FDP",0.0871111111111111,0.0184650705021482,4.71761594958311
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_100","RT_lFDR FDP",0.0769563492063492,0.0225417742972002,3.41394373804496
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_100","RE_lFDR FDP",0.0418968253968254,0.0136851163776749,3.06148842586194
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","scale-free_100","FWER RT_MPS",0.06,0.0237486841740758,2.52645576319956
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","scale-free_100","RT best MCC - MB",-0.181667320622718,0.00359492179727813,-50.5344290827874
+"S5.5-a2","Same with the best ridge ranking (vWP)","scale-free_100","vWP best MCC - MB",-0.141238519917162,0.00322510319179868,-43.7934886165273
+"S5.5-b","Exact separation share (RT)","scale-free_100","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","scale-free_100","RT AUC",0.872424575584749,0.00195002679425816,447.391070806615
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","scale-free_100","sens mcc(m=10) - mcc(m=0.3)",0.218906228814172,0.00353372593010935,61.9477099083907
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","scale-free_100","argmax at kappa = 10.89",0.48897809576423,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","scale-free_100","obs - pred at distance 1",0.00109037654519815,0.000379819173382801,2.87077804810874
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","scale-free_100","pred at distance 2",0.0169027691144599,6.11318426595605e-07,27649.6967522972
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","scale-free_100","obs at distance 3 and 4+ (mean of the two classes)",0.0379414249180817,5.68484547507139e-05,667.413478245955
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","scale-free_100","obs(d=2) - obs(d=4+)",0.000709520019003521,0.000169025887309713,4.19770030671952
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_100","rich - obs at distance 2",0.00673459433199833,3.14586468492735e-05,214.077686311986
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_100","rich - obs at distance 4",0.0073450380650124,1.12225330233567e-05,654.490216221744
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","scale-free_100","kappa_hat / lambda_CV",1.79332071439732,0.000966387363053254,1855.6955346885
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","scale-free_100","max dev.",0.185901386103842,0.00160045555876272,116.155294088615
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","scale-free_200","MB - best other ( GLASSO )",0.201411109116156,0.013703283169121,14.6980184697647
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","scale-free_200","vWP_lFDR - RT_lFDR",0.0603266771920681,0.00604123165485117,9.98582418928186
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","scale-free_200","RE_lFDR - RT_lFDR",-0.0349915558005588,0.00599740356971085,-5.83445075753772
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","scale-free_200","vWP_lFDR - RT_MPS",0.0575982732639767,0.00871390779779247,6.60992457122031
+"S5.4-e","Second-best ridge layer minus third","scale-free_200","RT_MPS - RT_lFDR",0.00272840392809138,0.00956653637181671,0.285202901243269
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_200","vWP_lFDR FDP",0.0522529285763165,0.00563133670336379,9.27895654775961
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_200","RT_lFDR FDP",0.0434761059528482,0.00547114422090952,7.94643756358899
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_200","RE_lFDR FDP",0.050747793210153,0.00631259237070278,8.03913673337714
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","scale-free_200","FWER RT_MPS",0.05,0.0217944947177034,2.29415733870562
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","scale-free_200","RT best MCC - MB",-0.164202171638747,0.00306684234295326,-53.5411192610006
+"S5.5-a2","Same with the best ridge ranking (vWP)","scale-free_200","vWP best MCC - MB",-0.119796660463263,0.00256964528098313,-46.6199211812726
+"S5.5-b","Exact separation share (RT)","scale-free_200","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","scale-free_200","RT AUC",0.964484423705203,0.00081324952182469,1185.96371448358
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","scale-free_200","sens mcc(m=10) - mcc(m=0.3)",0.187077015429609,0.00323196409680388,57.8833829294734
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","scale-free_200","argmax at kappa = 10.45",0.743191113325124,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","scale-free_200","obs - pred at distance 1",-0.000150817764378131,0.000358516406677283,-0.420671862065965
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","scale-free_200","pred at distance 2",0.0166431223297025,3.84927567735614e-07,43237.0235979923
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","scale-free_200","obs at distance 3 and 4+ (mean of the two classes)",0.0337026368743838,4.66818462065544e-05,721.964523966315
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","scale-free_200","obs(d=2) - obs(d=4+)",0.000933653229826268,0.000125485902216587,7.44030375790577
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_200","rich - obs at distance 2",0.0053453127795334,3.04242516548919e-05,175.692498213803
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_200","rich - obs at distance 4",0.00612119345419275,8.34217158928653e-06,733.764990168018
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","scale-free_200","kappa_hat / lambda_CV",1.39428770821873,0.000252611480752201,5519.49461705763
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","scale-free_200","max dev.",0.161985917846406,0.00120220752060289,134.740396371146
+"S5.4-a","Neighbourhood selection has the highest or near-highest MCC in every setting","scale-free_400","MB - best other ( GLASSO )",0.0699874118010334,0.00300244752309629,23.3101199147216
+"S5.4-b","The van Wieringen-Peeters version is never worse than the archetypal ridge","scale-free_400","vWP_lFDR - RT_lFDR",0.0339688436454427,0.00628487798066654,5.40485332411181
+"S5.4-c","The extrapolated estimator has a lower MCC than the plain ridge estimator in fourteen of the sixteen settings, by up to 0.07, and a higher one by less than 0.01 in the other two","scale-free_400","RE_lFDR - RT_lFDR",-0.022477809164625,0.00413812224658278,-5.43188620954514
+"S5.4-d","Ranking of the ridge layers (best minus second best ridge layer)","scale-free_400","vWP_lFDR - RT_lFDR",0.0339688436454427,0.00628487798066654,5.40485332411181
+"S5.4-e","Second-best ridge layer minus third","scale-free_400","RT_lFDR - RT_MPS",0.00827200637122854,0.00640415919176533,1.29166157859801
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_400","vWP_lFDR FDP",0.0140744074220596,0.00156261518556167,9.00695676843857
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_400","RT_lFDR FDP",0.0169585969358703,0.00188611266752475,8.99129581592069
+"S5.4-f","Their [lFDR] false discovery proportions stay below 0.2","scale-free_400","RE_lFDR FDP",0.016172677309218,0.00172602817057488,9.36988027479958
+"S5.4-g","RT-MPS: share of replicates with at least one false edge","scale-free_400","FWER RT_MPS",0.25,0.0433012701892219,5.77350269189626
+"S5.5-a","The ridge rankings attain an MCC within 0.01 of the best lasso-based path (band n >= 200, random n = 400)","scale-free_400","RT best MCC - MB",-0.0621077227384146,0.00209781581987567,-29.6058987400026
+"S5.5-a2","Same with the best ridge ranking (vWP)","scale-free_400","vWP best MCC - MB",-0.0394405783152668,0.00188397431846435,-20.9347749216748
+"S5.5-b","Exact separation share (RT)","scale-free_400","Sep.",0,0,NA
+"S5.5-c","The areas under the ROC curve are above 0.95 for n >= 200","scale-free_400","RT AUC",0.996444531899077,0.000198142445253129,5028.93022555622
+"S5.5-d","Best MCC of the ridge ranking, largest minus smallest grid penalty","scale-free_400","sens mcc(m=10) - mcc(m=0.3)",0.0303930947909188,0.00251134010335126,12.1023411963838
+"S5.5-e","Grid penalty with the largest mean best MCC (band: peak between 1.2 and 4.5)","scale-free_400","argmax at kappa = 3.18",0.929185656978663,NA,NA
+"S5.3-a","For edges the observed and predicted means differ by at most 0.002","scale-free_400","obs - pred at distance 1",-0.000435480716763013,0.000278732226128965,-1.56236228157387
+"S5.3-b","Population leakage at distance two between 0.014 and 0.055","scale-free_400","pred at distance 2",0.0141093080676967,2.53819863518937e-07,55587.8798140004
+"S5.3-c","Noise floor between 0.03 and 0.04 at distances of three or more","scale-free_400","obs at distance 3 and 4+ (mean of the two classes)",0.0296016741169302,4.74944675502914e-05,623.265732700031
+"S5.3-d","Only for the band graph is the observed mean at distance two visibly above this floor","scale-free_400","obs(d=2) - obs(d=4+)",0.000919482398714397,0.000127462477360011,7.21374962858574
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_400","rich - obs at distance 2",0.00378944855482807,2.48392676225604e-05,152.558787658711
+"S5.3-e","The extrapolated estimator raises the observed means at almost all distances","scale-free_400","rich - obs at distance 4",0.00465177077165618,8.10554964193971e-06,573.899485802542
+"S5.2-a","kappa_hat / lambda: 2.6-2.7 at n = 50, about 1.2 at n = 400","scale-free_400","kappa_hat / lambda_CV",1.21647307096399,5.93131534344832e-05,20509.3305704558
+"S5.2-b","Max deviation decreases from 0.18-0.19 (n = 50) to 0.13-0.14 (n = 400)","scale-free_400","max dev.",0.143883559091387,0.00115997903476026,124.039792771879
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.01 n=50","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0156836587197869,0.00329060064933379,-4.76619936331751
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.1 n=50","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0191918674135205,0.0031838712140743,-6.027840362601
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.5 n=50","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00674443942196481,0.00317683936991845,-2.12300297138975
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=1 n=50","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0144297678826324,0.00215577321092049,-6.6935463385182
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.01 n=100","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0265705133219369,0.00329183822837705,-8.07163398641153
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.1 n=100","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0166018531217301,0.00278268078776179,-5.96613639435215
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.5 n=100","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0101551956580797,0.00194294117131063,-5.22671288664359
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=1 n=100","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00654289046637723,0.00129022705765834,-5.07111552772118
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.01 n=200","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0364888274264668,0.00472252580014127,-7.72654909061062
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.1 n=200","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00944595551235034,0.00150139393398714,-6.29145709098839
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.5 n=200","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00347492849513592,0.000644133896704739,-5.39473005987259
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=1 n=200","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.0020907347160763,0.000411377687242814,-5.08227543912037
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.01 n=400","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00480881063835825,0.000687474484475274,-6.99489326069847
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.1 n=400","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.00248286374948355,0.00041741635179573,-5.9481707863198
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.5 n=400","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000900142928537468,0.00023771724827985,-3.78661176271814
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=1 n=400","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000311662301070373,0.000152468853354829,-2.04410470868477
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.01 n=800","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000531650234264801,0.000187669705353427,-2.83290386833386
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.1 n=800","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000461126346251107,0.000138068673518767,-3.33983324746311
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=0.5 n=800","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000396448270598459,7.00477168158892e-05,-5.65968868964664
+"S5.2-c","The estimate is within 4% of the Monte Carlo value in every cell","lambda=1 n=800","(kappa_hat - kappa_mc) / kappa_mc, paired",-0.000147242613858624,4.61448897349649e-05,-3.1908758413839

@@ -1,0 +1,30 @@
+{
+  "title": "Reproducibility archive: What does a ridge network estimate? Effective penalty, leakage and support recovery for ridge precision matrix estimators",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Arashi, Mohammad",
+      "affiliation": "Department of Statistics, Faculty of Mathematical Sciences, Ferdowsi University of Mashhad, Mashhad, Iran",
+      "orcid": "0000-0002-5881-9241"
+    },
+    {
+      "name": "Ebrahim, Ebrahim Khaled",
+      "affiliation": "Department of Statistics, Faculty of Business, Alexandria University, Alexandria, Egypt",
+      "orcid": "0009-0006-7839-8778"
+    }
+  ],
+  "description": "<p>Code, results and figures for the article \"What does a ridge network estimate? Effective penalty, leakage and support recovery for ridge precision matrix estimators\" by Mohammad Arashi and Ebrahim Khaled Ebrahim.</p><p>The deposit holds (1) the R scripts of the simulation study and of the stock-return analysis, which produce every number, table and figure of the article and its supplement; (2) their outputs, including the stored replicates from which the tables can be rebuilt without rerunning the simulations; and (3) the R package ridgegraph (source and built package), which implements the ridge precision estimator, the estimated effective penalty, the two-point extrapolation and the multi-penalty permutation selection. The stock data are the stockdata set of the CRAN package huge. See README.md for how to reproduce each table and figure.</p>",
+  "keywords": [
+    "Gaussian graphical model",
+    "Ridge precision matrix",
+    "Partial correlation",
+    "Support recovery",
+    "Effective regularization",
+    "Random matrix theory",
+    "Permutation test"
+  ],
+  "license": "MIT",
+  "access_right": "open"
+}
