@@ -292,6 +292,12 @@ legend("left", legend = paste0(sec_levels, " (", cnt[sec_levels], ")"),
        title.adj = 0)
 dev.off()
 
+## ---------------------------------------------------------------------------
+## Headline figure (Figure 1 of the paper): effective penalty against nominal
+## penalty and leakage by graph distance, band model of Table 2; own script
+## ---------------------------------------------------------------------------
+source("fig_headline.R", local = new.env())
+
 ## copy to the folder the manuscript reads
 figs <- list.files(FIG, pattern = "\\.pdf$", full.names = TRUE)
 file.copy(figs, file.path(OUT, "figures"), overwrite = TRUE)
