@@ -208,6 +208,29 @@ legend("top", inset = c(0, 0.06), horiz = TRUE, bty = "n", cex = 0.85,
 dev.off()
 
 ## ---------------------------------------------------------------------------
+## Figure 3 of the shortened paper: left panel of Figure 4 alone (effective
+## penalty against nominal penalty); the two-panel version is Figure S4 of
+## the supplement
+## ---------------------------------------------------------------------------
+open_pdf("fig_data_kappa_left.pdf", 4.6, 3.9)
+par(mar = c(4, 4.6, 3.6, 0.8), mgp = c(2.9, 0.7, 0), las = 1)
+plot(NA, xlim = xl, ylim = yl, log = "xy", xaxt = "n", yaxt = "n",
+     xlab = expression("nominal penalty " * lambda),
+     ylab = expression("effective penalty " * hat(kappa)[lambda]))
+pow10_axis(1, xl); pow10_axis(2, yl)
+abline(0, 1, col = "gray75")
+for (w in seq_along(wname)) {
+  cw <- curves[curves$window == wname[w], ]
+  lines(cw$lambda, cw$kappa, col = wcol[w], lty = if (w == 6) 2 else 1, lwd = 1.4)
+  if (w < 6) { s <- seq(1, nrow(cw), by = 12)
+    points(cw$lambda[s], cw$kappa[s], col = wcol[w], pch = wpch[w], bg = wcol[w], cex = 0.7) }
+}
+legend("bottomleft", inset = c(0, 1.01), xpd = NA, ncol = 3, bty = "n", cex = 0.8,
+       legend = c(paste("window", 1:5), "full sample"),
+       col = wcol, pch = wpch, pt.bg = wcol, lty = c(1, 1, 1, 1, 1, 2), lwd = 1.4)
+dev.off()
+
+## ---------------------------------------------------------------------------
 ## Figure 5: sector concordance and stability (horizontal bars; ridge-based
 ## and lasso-based methods in different colours)
 ## ---------------------------------------------------------------------------
