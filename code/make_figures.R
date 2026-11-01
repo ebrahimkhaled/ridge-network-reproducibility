@@ -11,7 +11,8 @@
 ##          point shape; categories use the Okabe-Ito palette.
 ## Input  : ../results/*.csv, ../results/data_selections.rds, the stock data
 ##          of the huge package (sector labels)
-## Output : ../figs/*.pdf, copied to ../figures/ (the folder the manuscript
+## Output : ../figs/*.pdf (fig_sim_loss, fig_sim_mcc and fig_sim_designs from
+##          fig_story.R), copied to ../figures/ (the folder the manuscript
 ##          reads)
 ## Usage  : Rscript make_figures.R   (run from code/)
 ###############################################################################
@@ -297,6 +298,12 @@ dev.off()
 ## penalty and leakage by graph distance, band model of Table 2; own script
 ## ---------------------------------------------------------------------------
 source("fig_headline.R", local = new.env())
+
+## ---------------------------------------------------------------------------
+## Simulation figures of Section 5 (Figures 2 to 4 of the paper): leakage and
+## noise, selection and ranking accuracy, designs D1 to D4; own script
+## ---------------------------------------------------------------------------
+source("fig_story.R", local = new.env())
 
 ## copy to the folder the manuscript reads
 figs <- list.files(FIG, pattern = "\\.pdf$", full.names = TRUE)
