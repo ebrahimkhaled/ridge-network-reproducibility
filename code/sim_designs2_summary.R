@@ -9,6 +9,11 @@
 ##                               paired standard errors of the best MCC
 ##   sim_designs2_ranking.csv    best attainable MCC of every ranking and the
 ##                               share of true edges among its top |E| pairs
+##                               (GLASSO and MB: best MCC over the 30 graphs
+##                               of the path, as in the main design, read
+##                               from ../results/ext_work4/ written by
+##                               sim_rescore.R; their share at |E| is that of
+##                               the path-entry order)
 ##   sim_designs2_margin.csv     penalties, kappa_hat against kappa_n, the
 ##                               population margin, the leakage / noise split
 ##                               and the oracle bias-corrected ranking
@@ -19,6 +24,7 @@
 
 OUT  <- ".."
 WORK <- file.path(OUT, "results", "ext_work2")
+WORK4 <- file.path(OUT, "results", "ext_work4")
 RES  <- file.path(OUT, "results")
 
 files <- list.files(WORK, pattern = "^d[1-4]_.*_rep[0-9]+\\.rds$", full.names = TRUE)
@@ -44,6 +50,7 @@ sel_rows <- rank_rows <- marg_rows <- sens_rows <- list()
 for (cell in unique(cell_of)) {
   reps <- lapply(files[cell_of == cell], readRDS)
   bad <- sapply(reps, function(r) !is.null(r$error))
+  fcell <- files[cell_of == cell][!bad]
   if (any(bad)) cat(cell, ":", sum(bad), "replicates with errors:",
                     unique(sapply(reps[bad], `[[`, "error")), "\n")
   reps <- reps[!bad]
@@ -72,6 +79,14 @@ for (cell in unique(cell_of)) {
       tie_best = tie, row.names = NULL)
     ## rankings
     rk <- simplify2array(lapply(A, `[[`, "rks"))    # method x (best, match) x rep
+    ## best MCC of the GLASSO and MB paths: the largest MCC over the graphs
+    ## of the path (sim_rescore.R refitted the paths on the same data)
+    P4 <- lapply(file.path(WORK4, paste0("dsg_", basename(fcell))), function(f) {
+      if (!file.exists(f)) stop("missing rescored paths: ", f)
+      pm <- readRDS(f)[[if (variant == "raw") "paths" else "paths_r"]]
+      pm[, 1]                                  # column 1 = best MCC
+    })
+    for (m in c("GLASSO", "MB")) rk[m, "best", ] <- sapply(P4, `[[`, m)
     bb <- rk[, "best", ]
     bbest <- which.max(rowMeans(bb[rownames(bb) != "Oracle_corr", ]))
     bname <- rownames(bb)[rownames(bb) != "Oracle_corr"][bbest]
