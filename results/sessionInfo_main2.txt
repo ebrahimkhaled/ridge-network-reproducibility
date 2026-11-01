@@ -1,0 +1,47 @@
+R version 4.4.1 (2024-06-14 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Africa/Cairo
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] parcor_0.2-6        Epi_2.65            ppls_2.0.0         
+ [4] beam_2.0.4          GeneNet_1.2.17      longitudinal_1.1.13
+ [7] corpcor_1.6.10      SILGGM_1.0.0        Rcpp_1.0.13        
+[10] GGMridge_1.5        MASS_7.3-61         mvtnorm_1.3-1      
+[13] igraph_2.2.2        fdrtool_1.2.18      glmnet_4.1-10      
+[16] Matrix_1.7-0        huge_1.6           
+
+loaded via a namespace (and not attached):
+ [1] etm_1.1.2           dplyr_1.2.1         compiler_4.4.1     
+ [4] tidyselect_1.2.1    assertthat_0.2.1    splines_4.4.1      
+ [7] lattice_0.22-6      R6_2.5.1            plyr_1.8.9         
+[10] generics_0.1.3      shape_1.4.6.1       knitr_1.48         
+[13] iterators_1.0.14    tibble_3.2.1        pillar_1.11.1      
+[16] rlang_1.2.0         reshape_0.8.10      xfun_0.47          
+[19] glasso_1.11         cli_3.6.6           mgcv_1.9-4         
+[22] magrittr_2.0.3      foreach_1.5.2       grid_4.4.1         
+[25] cmprsk_2.2-12       nlme_3.1-166        lifecycle_1.0.5    
+[28] vctrs_0.7.3         data.table_1.15.4   glue_1.8.1         
+[31] numDeriv_2016.8-1.1 zoo_1.8-12          codetools_0.2-20   
+[34] survival_3.7-0      tools_4.4.1         pkgconfig_2.0.3    

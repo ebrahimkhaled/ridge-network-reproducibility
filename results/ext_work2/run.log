@@ -1,0 +1,75 @@
+Sat Oct 31 22:47:26 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+      0 [main] bash 4531 dofork: child -1 - forked process 55960 died unexpectedly, retry 0, exit code 0xC0000142, errno 11
+/usr/bin/bash: fork: retry: Resource temporarily unavailable
+Sat Oct 31 22:50:43 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+kfit done
+Sat Oct 31 23:03:46 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+d1 done: 2000 new replicates
+Sun Nov  1 02:43:28 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+d4 done: 1200 new replicates
+Sun Nov  1 04:33:10 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+d3 done: 1200 new replicates
+Error: unexpected ',' in "                  "daie_tau","
+Execution halted
+Sun Nov  1 06:33:50 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+d2 done: 300 new replicates
+Sun Nov  1 07:57:40 EST 2026
+Warning messages:
+1: package 'huge' was built under R version 4.4.3 
+2: package 'glmnet' was built under R version 4.4.3 
+3: package 'igraph' was built under R version 4.4.3 
+4: package 'GGMridge' was built under R version 4.4.3 
+5: package 'SILGGM' was built under R version 4.4.3 
+6: package 'GeneNet' was built under R version 4.4.3 
+7: package 'beam' was built under R version 4.4.3 
+d3 done: 600 new replicates
+Sun Nov  1 09:29:19 EST 2026
+ALLDONE

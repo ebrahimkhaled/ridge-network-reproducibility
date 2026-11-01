@@ -125,10 +125,9 @@ for (j in seq_along(kaps)) {
 }
 ## the partial correlations of Theta: 0.40 on edges (d = 1), zero beyond
 points(0.86, abs(pc_true), pch = 8, cex = 1.2, lwd = 1.3)
-text(1.12, abs(pc_true) * 1.15, bquote(Theta * ": " * .(sprintf("%.2f", abs(pc_true))) * " on edges, 0 beyond"), adj = c(-0.08, 0.5))
 legend("bottomleft", bty = "n", cex = 1, y.intersp = 1,
        legend = as.expression(c(lapply(kaps, function(k) bquote(kappa == .(k))),
-                                "bound, Prop. 3.4(c)")),
+                                "leakage bound")),
        col = c(kcol, "gray30"), pch = c(kpch, NA), lty = c(1, 1, 1, 1, 3),
        lwd = c(1.6, 1.6, 1.6, 1.6, 1.1), pt.cex = c(1, 1, 1, 1.35, 1))
 mtext("(b)", side = 3, line = 0.25, adj = 0, cex = 1, font = 2)

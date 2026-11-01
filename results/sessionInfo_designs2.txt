@@ -1,0 +1,40 @@
+R version 4.4.1 (2024-06-14 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+
+
+Random number generation:
+ RNG:     L'Ecuyer-CMRG 
+ Normal:  Inversion 
+ Sample:  Rejection 
+ 
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Africa/Cairo
+tzcode source: internal
+
+attached base packages:
+[1] parallel  stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] beam_2.0.4          GeneNet_1.2.17      longitudinal_1.1.13
+ [4] corpcor_1.6.10      SILGGM_1.0.0        Rcpp_1.0.13        
+ [7] GGMridge_1.5        MASS_7.3-61         mvtnorm_1.3-1      
+[10] igraph_2.2.2        fdrtool_1.2.18      glmnet_4.1-10      
+[13] Matrix_1.7-0        huge_1.6           
+
+loaded via a namespace (and not attached):
+ [1] knitr_1.48       cli_3.6.6        xfun_0.47        rlang_1.2.0     
+ [5] assertthat_0.2.1 glasso_1.11      plyr_1.8.9       grid_4.4.1      
+ [9] foreach_1.5.2    lifecycle_1.0.5  compiler_4.4.1   codetools_0.2-20
+[13] pkgconfig_2.0.3  lattice_0.22-6   splines_4.4.1    shape_1.4.6.1   
+[17] magrittr_2.0.3   tools_4.4.1      reshape_0.8.10   iterators_1.0.14
+[21] survival_3.7-0  

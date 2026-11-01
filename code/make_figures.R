@@ -113,8 +113,8 @@ pr$dclass <- pmin(pr$distance, 4)
 dcol <- c(okabe["black"], okabe["vermillion"], okabe["blue"], okabe["skyblue"])
 dpch <- c(16, 17, 15, 1)
 signed_panels <- function(nsel, file) {
-  open_pdf(file, 6.5, 3.9)
-  par(mfrow = c(2, 4), mar = c(3.4, 4.3, 1.6, 0.4), mgp = c(2.9, 0.6, 0),
+  open_pdf(file, 6.5, 4.3)
+  par(mfrow = c(2, 4), mar = c(3.9, 4.3, 1.6, 0.4), mgp = c(2.9, 0.6, 0),
       oma = c(0, 0, 1.8, 0), las = 1, cex = 0.75)
   for (xvar in c("rho_kappa_mean", "rho_theta")) for (g in graphs) {
     d <- pr[pr$graph == g & pr$n == nsel, ]
@@ -122,9 +122,9 @@ signed_panels <- function(nsel, file) {
     lim <- range(d$rho_hat_mean, d[[xvar]])
     plot(d[[xvar]], d$rho_hat_mean, col = dcol[d$dclass], pch = dpch[d$dclass],
          cex = 0.5, xlim = lim, ylim = lim, main = gl[g], font.main = 1,
-         xlab = if (xvar == "rho_theta") expression("partial correlation of " * Theta)
-                else expression(rho^(kappa[italic(n)])),
-         ylab = expression("mean of " * hat(rho)))
+         xlab = "", ylab = "mean ridge partial corr.")
+    title(xlab = if (xvar == "rho_theta") "partial correlation of Θ"
+                 else "population ridge network", line = 2.2)
     abline(0, 1, col = "gray60")
   }
   par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE)
@@ -143,7 +143,7 @@ for (nn in n_grid) signed_panels(nn, sprintf("fig_sim_leakage_signed_n%d.pdf", n
 sens <- read.csv(file.path(RES, "sim_sensitivity.csv"))
 open_pdf("fig_sim_sensitivity.pdf", 6.5, 5.2)
 par(mfrow = c(2, 2), mar = c(3.6, 4.2, 1.6, 0.6), mgp = c(2.4, 0.7, 0),
-    oma = c(0, 0, 1.4, 0), las = 1)
+    oma = c(0, 0, 2.4, 0), las = 1)
 for (g in graphs) {
   d <- sens[sens$graph == g, ]
   plot(NA, xlim = range(sens$kappa), ylim = c(0, 1), log = "x", xaxt = "n",
@@ -159,7 +159,7 @@ for (g in graphs) {
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE)
 plot.new()
 legend("top", horiz = TRUE, bty = "n", legend = paste0("n = ", n_grid),
-       col = seq4, pch = pch4, lwd = 1.5, cex = 0.9)
+       col = seq4, pch = pch4, lwd = 1.5, cex = 0.9, title = "sample size")
 dev.off()
 
 ## ---------------------------------------------------------------------------
