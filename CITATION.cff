@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this archive, please cite it as below."
-title: "Reproducibility archive: What does a ridge network estimate? Effective penalty and leakage in ridge precision matrix estimation"
+title: "Reproducibility archive: What does a ridge network estimate? Effective penalty and leakage, computed along the ridge path"
 version: 1.1.2
 doi: 10.5281/zenodo.23814609
 license: MIT

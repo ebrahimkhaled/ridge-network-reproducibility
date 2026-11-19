@@ -2,7 +2,7 @@
 
 Code, results and figures for the article
 
-> Arashi, M. and Ebrahim, E. K. *What does a ridge network estimate? Effective penalty and leakage in ridge precision matrix estimation.*
+> Arashi, M. and Ebrahim, E. K. *What does a ridge network estimate? Effective penalty and leakage, computed along the ridge path.*
 
 The archive also contains the R package **ridgegraph** 0.1.1, which implements the ridge partial correlations, the estimated effective penalty and its limit as the penalty tends to zero, the two-point extrapolated estimator and the multi-penalty permutation selection.
 
@@ -30,14 +30,19 @@ The archive also contains the R package **ridgegraph** 0.1.1, which implements t
 
 ## Which script gives which result
 
+Numbers of tables and figures refer to the version of the article from 19 November 2026.
+
 | Result in the article | Script | Output files |
 |---|---|---|
-| Figure 1 (headline figure) | `fig_headline.R` | `sim_kappa_grid.csv` and deterministic computations |
-| Table 2 (effective penalty, band model, p = 200) | `sim_ridge_support.R`, `sim_extensions.R kgrid`, `table1_fixed_point.R`, `sim_main2.R` | `sim_kappa_grid.csv`, `sim_kappa_grid_reps.csv`, `sim_kappa_fixedpoint.csv`, `sim_main2_kgrid_relerr.csv` |
-| Figure 2 (where the accuracy goes: leakage and noise; Table S7) | `sim_extensions.R`, `sim_main2.R`, `fig_story.R` | `sim_kappa.csv`, `sim_margin.csv`, `sim_highdim.csv`, `sim_main2_leakage_oracle*.csv` |
-| Figure 3 (selection and ranking accuracy, 500 replicates; Tables S8 and S9) | `sim_main2.R`, `sim_main2_summary.R`, `sim_rescore.R`, `fig_story.R` | `sim_main2_selection.csv`, `sim_main2_ranking.csv`, `sim_main2_tuning.csv`, `sim_main2_tailrules.csv` |
-| Figure 4 (further designs D1 to D4; Table S10) | `sim_designs2.R`, `sim_rescore.R`, `sim_designs2_summary.R`, `fig_story.R` | `sim_designs2_*.csv` |
-| Tables 3 and 4 (stock returns) | `data_stock_network.R`, `data_checks.R` (some sentences of Section 6 use `data_extensions.R`) | `data_kappa.csv`, `data_methods.csv`, `data_matched.csv`, `data_checks_*.csv` |
+| Figure 1 (effective penalty against nominal penalty, and leakage by graph distance) | `fig_headline.R` | `sim_kappa_grid.csv` and deterministic computations |
+| Table 1 (effective penalty, band model, p = 200) | `sim_ridge_support.R`, `sim_extensions.R kgrid`, `table1_fixed_point.R`, `sim_main2.R` | `sim_kappa_grid.csv`, `sim_kappa_grid_reps.csv`, `sim_kappa_fixedpoint.csv`, `sim_main2_kgrid_relerr.csv` |
+| Table 2 (quantities for reporting a ridge network) | formulas; computed by the functions of `ebrahim.gof` | none |
+| Table 3 (computing times) | `sim_ridge_support.R` | `sim_timing.csv` (machine dependent) |
+| Table 4 (accuracy of the estimated effective penalty in all designs) | `sim_ridge_support.R`, `sim_extensions.R`, `sim_designs2.R`, `sim_designs2_summary.R` | `sim_kappa.csv`, `sim_highdim.csv`, `sim_designs2_*.csv` |
+| Figure 2 (where the accuracy goes: leakage and noise) | `sim_extensions.R`, `sim_main2.R`, `fig_story.R` | `sim_kappa.csv`, `sim_margin.csv`, `sim_highdim.csv`, `sim_main2_leakage_oracle*.csv` |
+| Figure 3 (selection and ranking accuracy, 500 replicates) | `sim_main2.R`, `sim_main2_summary.R`, `sim_rescore.R`, `fig_story.R` | `sim_main2_selection.csv`, `sim_main2_ranking.csv`, `sim_main2_tuning.csv`, `sim_main2_tailrules.csv` |
+| Table 5 and Figure 4 (effective penalty in the stock return data) | `data_stock_network.R`, `data_checks.R`, `make_figures.R` | `data_kappa.csv`, `data_kappa_curve.csv`, `data_checks_*.csv` |
+| Table 6 (networks in the stock return data) | `data_stock_network.R`, `data_checks.R` (some sentences of Section 6 use `data_extensions.R`) | `data_methods.csv`, `data_matched.csv`, `data_checks_*.csv` |
 | Supplement, simulation sections | `sim_ridge_support.R`, `sim_summaries.R`, `sim_main2_summary.R`, `sim_designs2_summary.R` | `sim_mcse.csv`, `sim_claims.csv`, `sim_fwer.csv`, `sim_competitors.csv`, `sim_highdim.csv`, `sim_leakage.csv`, `sim_pairs_*.csv`, `sim_sensitivity.csv`, `sim_main2_*.csv`, `sim_designs2_*.csv`, `sim_timing.csv` (machine dependent) |
 | Supplement, data sections | `data_stock_network.R`, `data_extensions.R`, `data_checks.R` | `data_kappa_curve.csv`, `data_marginal.csv`, `data_components_W1.csv`, `data_mps_B999*.csv`, `data_factor*.csv`, `data_blockperm*.csv`, `data_leakage_rates.csv`, `data_spearman.csv`, `data_cleaning*.csv`, `data_checks_*.csv` |
 | All figures | `make_figures.R` | `figures/*.pdf` |
