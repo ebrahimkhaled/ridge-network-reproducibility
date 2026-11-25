@@ -20,6 +20,7 @@ The archive also contains the R package **ridgegraph** 0.1.1, which implements t
 | `code/sim_designs2.R`, `code/sim_designs2_summary.R`, `code/run_designs2.sh` | Further designs: heterogeneous mixed-sign weights at p = 100, large n, a factor model and heavy-tailed data |
 | `code/sim_rescore.R` | Rescores the lasso paths of the further designs as in the main design, the factor-adjusted lasso comparison, the tail-area rules (Benjamini-Hochberg and tail-area Fdr) on the ridge partial correlations, and three constants of the text; rebuilds each replicate from its stored random numbers |
 | `code/data_checks.R` | Further stock-data analyses: matched effective penalties, subsamples, a leakage diagnostic, retuned lasso methods, GeneNet and beam, GARCH standardization and a semi-synthetic check |
+| `code/compare_networks.R` | Comparing networks from samples of different size at a common nominal penalty and at a common estimated effective penalty: quarterly against yearly windows of the stock data, and semi-synthetic designs with a known ordering (200 replicates) |
 | `code/fig_story.R` | Figures 2 to 4 (where the accuracy goes; selection and ranking accuracy; the further designs), drawn from the saved results; called by `make_figures.R` |
 | `code/fig_headline.R` | Figure 1 (effective penalty against nominal penalty, and leakage by graph distance); deterministic, called by `make_figures.R` |
 | `code/make_figures.R` | Draws all figures from the saved results |
@@ -30,7 +31,7 @@ The archive also contains the R package **ridgegraph** 0.1.1, which implements t
 
 ## Which script gives which result
 
-Numbers of tables and figures refer to the version of the article from 19 November 2026.
+Numbers of sections, tables and figures refer to the version of the article from 25 November 2026.
 
 | Result in the article | Script | Output files |
 |---|---|---|
@@ -43,6 +44,7 @@ Numbers of tables and figures refer to the version of the article from 19 Novemb
 | Figure 3 (selection and ranking accuracy, 500 replicates) | `sim_main2.R`, `sim_main2_summary.R`, `sim_rescore.R`, `fig_story.R` | `sim_main2_selection.csv`, `sim_main2_ranking.csv`, `sim_main2_tuning.csv`, `sim_main2_tailrules.csv` |
 | Table 5 and Figure 4 (effective penalty in the stock return data) | `data_stock_network.R`, `data_checks.R`, `make_figures.R` | `data_kappa.csv`, `data_kappa_curve.csv`, `data_checks_*.csv` |
 | Table 6 (networks in the stock return data) | `data_stock_network.R`, `data_checks.R` (some sentences of Section 6 use `data_extensions.R`) | `data_methods.csv`, `data_matched.csv`, `data_checks_*.csv` |
+| Section 6.2 (comparing networks at a common effective penalty) | `compare_networks.R` | `compare_real.csv`, `compare_semisynthetic.csv`, `compare_semisynthetic_replicates.csv` |
 | Supplement, simulation sections | `sim_ridge_support.R`, `sim_summaries.R`, `sim_main2_summary.R`, `sim_designs2_summary.R` | `sim_mcse.csv`, `sim_claims.csv`, `sim_fwer.csv`, `sim_competitors.csv`, `sim_highdim.csv`, `sim_leakage.csv`, `sim_pairs_*.csv`, `sim_sensitivity.csv`, `sim_main2_*.csv`, `sim_designs2_*.csv`, `sim_timing.csv` (machine dependent) |
 | Supplement, data sections | `data_stock_network.R`, `data_extensions.R`, `data_checks.R` | `data_kappa_curve.csv`, `data_marginal.csv`, `data_components_W1.csv`, `data_mps_B999*.csv`, `data_factor*.csv`, `data_blockperm*.csv`, `data_leakage_rates.csv`, `data_spearman.csv`, `data_cleaning*.csv`, `data_checks_*.csv` |
 | All figures | `make_figures.R` | `figures/*.pdf` |
@@ -70,6 +72,7 @@ sh run_designs2.sh
 Rscript sim_rescore.R
 Rscript sim_designs2_summary.R
 Rscript data_checks.R
+Rscript compare_networks.R
 Rscript make_figures.R
 ```
 

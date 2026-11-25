@@ -1,7 +1,7 @@
 {
   "title": "Reproducibility archive: What does a ridge network estimate? Effective penalty and leakage, computed along the ridge path",
   "upload_type": "software",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "language": "eng",
   "creators": [
     {
@@ -15,7 +15,7 @@
       "orcid": "0009-0006-7839-8778"
     }
   ],
-  "description": "<p>Code, results and figures for the article \"What does a ridge network estimate? Effective penalty and leakage, computed along the ridge path\" by Mohammad Arashi and Ebrahim Khaled Ebrahim.</p><p>The deposit holds (1) the R scripts of the simulation study and of the stock-return analysis, which produce every number, table and figure of the article and its supplement; (2) their outputs, including the stored replicates from which the tables can be rebuilt without rerunning the simulations; and (3) the R package ridgegraph (source and built package), which implements the ridge precision estimator, the estimated effective penalty, the two-point extrapolation and the multi-penalty permutation selection. The stock data are the stockdata set of the CRAN package huge. See README.md for how to reproduce each table and figure.</p>",
+  "description": "<p>Code, results and figures for the article \"What does a ridge network estimate? Effective penalty and leakage, computed along the ridge path\" by Mohammad Arashi and Ebrahim Khaled Ebrahim.</p><p>The deposit holds (1) the R scripts of the simulation study, of the stock-return analysis and of the comparison of networks from samples of different size, which produce every number, table and figure of the article and its supplement; (2) their outputs, including the stored replicates from which the tables can be rebuilt without rerunning the simulations; and (3) the R package ridgegraph (source and built package), which implements the ridge precision estimator, the estimated effective penalty, the two-point extrapolation and the multi-penalty permutation selection. The stock data are the stockdata set of the CRAN package huge. See README.md for how to reproduce each table and figure.</p>",
   "keywords": [
     "Gaussian graphical model",
     "Ridge precision matrix",
